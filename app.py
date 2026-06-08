@@ -13,10 +13,10 @@ ips = st.selectbox('IPS', ['No', 'Yes'])
 screen_size = st.number_input('Screen Size')
 resolution = st.selectbox('Screen Resolution', [
                           '1920x1080', '1366x768', '1600x900', '3840x2160', '3200x1800', '2880x1800', '2560x1600', '2560x1440'])
-cpu = st.selectbox('CPU', df['Cpu brand'].unique())
+cpu = st.selectbox('CPU', df['cpu_brand'].unique())
 hdd = st.selectbox('HDD(in GB)', [0, 128, 256, 512, 1024, 2048])
 ssd = st.selectbox('SSD(in GB)', [0, 128, 256, 512, 1024])
-gpu = st.selectbox('GPU', df['Gpu brand'].unique())
+gpu = st.selectbox('GPU', df['Gpu_brand'].unique())
 os = st.selectbox('OS', df['OpSys'].unique())
 if st.button('Predict Price'):
     ppi = None
