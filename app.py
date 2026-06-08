@@ -17,7 +17,7 @@ cpu = st.selectbox('CPU', df['cpu_brand'].unique())
 hdd = st.selectbox('HDD(in GB)', [0, 128, 256, 512, 1024, 2048])
 ssd = st.selectbox('SSD(in GB)', [0, 128, 256, 512, 1024])
 gpu = st.selectbox('GPU', df['Gpu_brand'].unique())
-os = st.selectbox('OS', df['OpSys'].unique())
+os = st.selectbox('OS', df['os'].unique())
 if st.button('Predict Price'):
     ppi = None
     if touchscreen == 'Yes':
